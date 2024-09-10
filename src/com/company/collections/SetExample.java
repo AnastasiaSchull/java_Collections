@@ -3,12 +3,12 @@ package com.company.collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class SetExample {
     public void runSetExample(List<String> list1, List<String> list2, List<String> list3) {
         //создаем HashSet<String> (set1)
-        HashSet<String> set1 = new HashSet<>();
-
+        Set<String> set1 = new HashSet<>();
         // вставляем в set 2 произвольные строки
         set1.add("Hello");
         set1.add("World");
@@ -20,7 +20,7 @@ public class SetExample {
         System.out.println("set1 after adding elements from list1 and list2: " + set1);
 
         // создаем LinkedHashSet<String> (set2)
-        LinkedHashSet<String> set2 = new LinkedHashSet<>();
+        Set<String> set2 = new LinkedHashSet<>();
 
         // вставляем в set все элементы из list2 и list3
         set2.addAll(list2);

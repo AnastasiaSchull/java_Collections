@@ -5,7 +5,8 @@ import java.util.*;
 public class MapExample {
     public static void runMapExample() {
         // создаем LinkedHashMap<Integer, String> (map1)
-        LinkedHashMap<Integer, String> map1 = new LinkedHashMap<>();
+        //LinkedHashMap<Integer, String> map1 = new LinkedHashMap<>();//неправильно создавать от реализации
+        Map<Integer, String> map1 = new LinkedHashMap<>();//правильно создавать от интерфейса
 
         // добавляем в map значения всех месяцев года (номер месяца : название)
         map1.put(0, "January");
@@ -30,8 +31,8 @@ public class MapExample {
         System.out.println("Map after updating the 6th month: " + map1);
 
         // создаем HashMap<Integer, String> (map2)
-        HashMap<Integer, String> map2 = new HashMap<>();
-
+        //HashMap<Integer, String> map2 = new HashMap<>();
+        Map<Integer, String> map2 = new HashMap<>();//правильно создавать от интерфейса
         // вставим в map2 все значения map1
         map2.putAll(map1);
 
@@ -48,8 +49,8 @@ public class MapExample {
 
         System.out.println();
         // создаем map3 (ключ – имя студента, значение - Set<String> контактов)
-        HashMap<String, Set<String>> map3 = new HashMap<>();
-
+        //HashMap<String, Set<String>> map3 = new HashMap<>();
+        Map<String, Set<String>> map3 = new HashMap<>();//правильно создавать от интерфейса
         // добавляем данные для первого студента
         Set<String> student1Contacts = new HashSet<>();
         student1Contacts.add("123-456-7890");
